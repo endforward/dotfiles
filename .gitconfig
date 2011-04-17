@@ -1,0 +1,29 @@
+[user]
+	name = Olle de Zwart
+	email = olle@endforward.nl
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+ di = diff
+ dc = diff --cached
+ amend = commit --amend
+ aa = add --all
+ h = log -1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ head = log -1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ oneline = log --oneline
+ recent = log -10 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ ff = merge --ff-only
+ pullff = pull --ff-only
+ lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ div = divergence
+[core]
+	excludesfile = /Users/dezwart/.gitignore
+[merge]
+  tool = vimdiff
